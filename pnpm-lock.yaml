@@ -30,8 +30,8 @@ importers:
         specifier: ^2.0.1
         version: 2.6.6
       '@novu/react':
-        specifier: ^3.5.0
-        version: 3.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^3.9.3
+        version: 3.9.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@paralleldrive/cuid2':
         specifier: ^2.2.2
         version: 2.2.2
@@ -726,6 +726,11 @@ packages:
     peerDependencies:
       react: '>=16.8.0'
 
+  '@corvu/utils@0.4.2':
+    resolution: {integrity: sha512-Ox2kYyxy7NoXdKWdHeDEjZxClwzO4SKM8plAaVwmAJPxHMqA0rLOoAsa+hBDwRLpctf+ZRnAd/ykguuJidnaTA==}
+    peerDependencies:
+      solid-js: ^1.8
+
   '@emnapi/core@1.4.0':
     resolution: {integrity: sha512-H+N/FqT07NmLmt6OFFtDfwe8PNygprzBikrEMyQfgqSmT0vzE515Pz7R8izwB9q/zsH/MA64AKoul3sA6/CzVg==}
 
@@ -833,6 +838,12 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
+  '@internationalized/date@3.9.0':
+    resolution: {integrity: sha512-yaN3brAnHRD+4KyyOsJyk49XUvj2wtbNACSqg0bz3u8t2VuzhC8Q5dfRnrSxjnnbDb+ienBnkn1TzQfE154vyg==}
+
+  '@internationalized/number@3.6.5':
+    resolution: {integrity: sha512-6hY4Kl4HPBvtfS62asS/R22JzNNy8vi/Ssev7x6EobfCp+9QIB2hKvI2EtbdJ0VSQacxVNtqhE/NmF/NZ0gm6g==}
+
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
@@ -857,6 +868,16 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@kobalte/core@0.13.11':
+    resolution: {integrity: sha512-hK7TYpdib/XDb/r/4XDBFaO9O+3ZHz4ZWryV4/3BfES+tSQVgg2IJupDnztKXB0BqbSRy/aWlHKw1SPtNPYCFQ==}
+    peerDependencies:
+      solid-js: ^1.8.15
+
+  '@kobalte/utils@0.9.1':
+    resolution: {integrity: sha512-eeU60A3kprIiBDAfv9gUJX1tXGLuZiKMajUfSQURAF2pk4ZoMYiqIzmrMBvzcxP39xnYttgTyQEVLwiTZnrV4w==}
+    peerDependencies:
+      solid-js: ^1.8.8
 
   '@motionone/animation@10.18.0':
     resolution: {integrity: sha512-9z2p5GFGCm0gBsZbi8rVMOAJCtw1WqBTIPw3ozk06gDvZInBPIsQcHgYogEJ4yuHJ+akuW8g1SEIOpTOvYs8hw==}
@@ -1000,16 +1021,16 @@ packages:
       zod-to-json-schema:
         optional: true
 
-  '@novu/js@3.5.0':
-    resolution: {integrity: sha512-7m1PG+6xswsQj48nX+oYXtxZCUn6olZquwbYoqru9E4kA6TwFczjeLRcNvOP0iF2Y/UKwxfM/GXeXX+x7xX+zA==}
+  '@novu/js@3.9.3':
+    resolution: {integrity: sha512-efbR8Tp8HeSyILkHgKeK0wHqz04nrfiw+bNEj77yapvxd7YVn300yzLnE15ASoEXJCEtSCRK0gsSqQLDKVqlYA==}
 
   '@novu/node@2.6.6':
     resolution: {integrity: sha512-WMGzHOG1has1/FsMveE/Sak02vv6jAz1RLlw99tLARr3wQyQBdpMwtG8lNcZzi/hBogLJ07R6wFcZtgoXx/i4Q==}
     engines: {node: '>=10'}
     deprecated: March 20, 2025 marks the end of support for @novu/node. Users can migrate to the new @novu/api package for most popular JS runtimes. For more information, visit https://docs.novu.co/platform/sdks/server/typescript
 
-  '@novu/react@3.5.0':
-    resolution: {integrity: sha512-/o5EVnO8+NpHUKvIlDJJ0PFtmisV0p+Aw4S2ceopYsoO7NdDRTaWIU3rBcDOrFdbNQOE+9IrOvDCpgElkskMVw==}
+  '@novu/react@3.9.3':
+    resolution: {integrity: sha512-dHS+Z0/5kbFau2Z0NcTtumJVlZCE4vqjsxC3r5IuI0kIYBq8i2ona9mPxoIh/5bZxlExGGQlFz4DMcgRH5Hpyw==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
       react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
@@ -1193,6 +1214,26 @@ packages:
   '@socket.io/component-emitter@3.1.2':
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
 
+  '@solid-primitives/event-listener@2.4.3':
+    resolution: {integrity: sha512-h4VqkYFv6Gf+L7SQj+Y6puigL/5DIi7x5q07VZET7AWcS+9/G3WfIE9WheniHWJs51OEkRB43w6lDys5YeFceg==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/keyed@1.5.2':
+    resolution: {integrity: sha512-BgoEdqPw48URnI+L5sZIHdF4ua4Las1eWEBBPaoSFs42kkhnHue+rwCBPL2Z9ebOyQ75sUhUfOETdJfmv0D6Kg==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/map@0.4.13':
+    resolution: {integrity: sha512-B1zyFbsiTQvqPr+cuPCXO72sRuczG9Swncqk5P74NCGw1VE8qa/Ry9GlfI1e/VdeQYHjan+XkbE3rO2GW/qKew==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/media@2.3.3':
+    resolution: {integrity: sha512-hQ4hLOGvfbugQi5Eu1BFWAIJGIAzztq9x0h02xgBGl2l0Jaa3h7tg6bz5tV1NSuNYVGio4rPoa7zVQQLkkx9dA==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
   '@solid-primitives/props@3.2.0':
     resolution: {integrity: sha512-vEg5yERdXftJz2+A6B0IMYTrPL9SE2DPmpURV/nZyqQ+PXziF02V4b4SDr6JX3jNJxBlY6c17LqwYEw+bIfGRg==}
     peerDependencies:
@@ -1203,13 +1244,38 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
+  '@solid-primitives/resize-observer@2.1.3':
+    resolution: {integrity: sha512-zBLje5E06TgOg93S7rGPldmhDnouNGhvfZVKOp+oG2XU8snA+GoCSSCz1M+jpNAg5Ek2EakU5UVQqL152WmdXQ==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/rootless@1.5.2':
+    resolution: {integrity: sha512-9HULb0QAzL2r47CCad0M+NKFtQ+LrGGNHZfteX/ThdGvKIg2o2GYhBooZubTCd/RTu2l2+Nw4s+dEfiDGvdrrQ==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/static-store@0.1.2':
+    resolution: {integrity: sha512-ReK+5O38lJ7fT+L6mUFvUr6igFwHBESZF+2Ug842s7fvlVeBdIVEdTCErygff6w7uR6+jrr7J8jQo+cYrEq4Iw==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
   '@solid-primitives/transition-group@1.1.0':
     resolution: {integrity: sha512-pL1sEPCHuC4V+Yh+SQsKSPuGDYrZbLJYSkk3AB4TZrWhptEJUS0IHoi7BAynYcMiULbvMMVKFbeFHqINZq0+ig==}
     peerDependencies:
       solid-js: ^1.6.12
 
+  '@solid-primitives/trigger@1.2.2':
+    resolution: {integrity: sha512-IWoptVc0SWYgmpBPpCMehS5b07+tpFcvw15tOQ3QbXedSYn6KP8zCjPkHNzMxcOvOicTneleeZDP7lqmz+PQ6g==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
   '@solid-primitives/utils@6.3.0':
     resolution: {integrity: sha512-e7hTlJ1Ywh2+g/Qug+n4L1mpfxsikoIS4/sHE2EK9WatQt8UJqop/vE6bsLnXlU1xuhb/jo94Ah5Y27rd4wP7A==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/utils@6.3.2':
+    resolution: {integrity: sha512-hZ/M/qr25QOCcwDPOHtGjxTD8w2mNyVAYvcfgwzBHq2RwNqHNdDNsMZYap20+ruRwW4A3Cdkczyoz0TSxLCAPQ==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -2201,6 +2267,9 @@ packages:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
 
+  event-target-polyfill@0.0.4:
+    resolution: {integrity: sha512-Gs6RLjzlLRdT8X9ZipJdIZI/Y6/HhRLyq9RdDlCsnpxr/+Nn6bU2EFGuC94GjxqhM+Nmij2Vcq98yoHrU8uNFQ==}
+
   events@3.3.0:
     resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
     engines: {node: '>=0.8.x'}
@@ -2990,6 +3059,9 @@ packages:
   parseley@0.12.1:
     resolution: {integrity: sha512-e6qHKe3a9HWr0oMRVDTRhKce+bRO8VGQR3NyVwcjwrbhMmFCX9KszEV35+rn4AdilFAq9VPxP/Fe1wC9Qjd2lw==}
 
+  partysocket@1.1.5:
+    resolution: {integrity: sha512-8uw9foq9bij4sKLCtTSHvyqMrMTQ5FJjrHc7BjoM2s95Vu7xYCN63ABpI7OZHC7ZMP5xaom/A+SsoFPXmTV6ZQ==}
+
   path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
     engines: {node: '>=8'}
@@ -3450,6 +3522,16 @@ packages:
     engines: {node: '>=20', pnpm: '>=9.0.0'}
     peerDependencies:
       solid-js: ^1.8.0
+
+  solid-presence@0.1.8:
+    resolution: {integrity: sha512-pWGtXUFWYYUZNbg5YpG5vkQJyOtzn2KXhxYaMx/4I+lylTLYkITOLevaCwMRN+liCVk0pqB6EayLWojNqBFECA==}
+    peerDependencies:
+      solid-js: ^1.8
+
+  solid-prevent-scroll@0.1.10:
+    resolution: {integrity: sha512-KplGPX2GHiWJLZ6AXYRql4M127PdYzfwvLJJXMkO+CMb8Np4VxqDAg5S8jLdwlEuBis/ia9DKw2M8dFx5u8Mhw==}
+    peerDependencies:
+      solid-js: ^1.8
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -4681,6 +4763,11 @@ snapshots:
       lodash.mergewith: 4.6.2
       react: 18.3.1
 
+  '@corvu/utils@0.4.2(solid-js@1.9.5)':
+    dependencies:
+      '@floating-ui/dom': 1.6.13
+      solid-js: 1.9.5
+
   '@emnapi/core@1.4.0':
     dependencies:
       '@emnapi/wasi-threads': 1.0.1
@@ -4828,6 +4915,14 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
+  '@internationalized/date@3.9.0':
+    dependencies:
+      '@swc/helpers': 0.5.5
+
+  '@internationalized/number@3.6.5':
+    dependencies:
+      '@swc/helpers': 0.5.5
+
   '@isaacs/cliui@8.0.2':
     dependencies:
       string-width: 5.1.2
@@ -4858,6 +4953,29 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  '@kobalte/core@0.13.11(solid-js@1.9.5)':
+    dependencies:
+      '@floating-ui/dom': 1.6.13
+      '@internationalized/date': 3.9.0
+      '@internationalized/number': 3.6.5
+      '@kobalte/utils': 0.9.1(solid-js@1.9.5)
+      '@solid-primitives/props': 3.2.0(solid-js@1.9.5)
+      '@solid-primitives/resize-observer': 2.1.3(solid-js@1.9.5)
+      solid-js: 1.9.5
+      solid-presence: 0.1.8(solid-js@1.9.5)
+      solid-prevent-scroll: 0.1.10(solid-js@1.9.5)
+
+  '@kobalte/utils@0.9.1(solid-js@1.9.5)':
+    dependencies:
+      '@solid-primitives/event-listener': 2.4.3(solid-js@1.9.5)
+      '@solid-primitives/keyed': 1.5.2(solid-js@1.9.5)
+      '@solid-primitives/map': 0.4.13(solid-js@1.9.5)
+      '@solid-primitives/media': 2.3.3(solid-js@1.9.5)
+      '@solid-primitives/props': 3.2.0(solid-js@1.9.5)
+      '@solid-primitives/refs': 1.1.0(solid-js@1.9.5)
+      '@solid-primitives/utils': 6.3.0(solid-js@1.9.5)
+      solid-js: 1.9.5
 
   '@motionone/animation@10.18.0':
     dependencies:
@@ -4973,12 +5091,15 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@novu/js@3.5.0':
+  '@novu/js@3.9.3':
     dependencies:
       '@floating-ui/dom': 1.6.13
+      '@kobalte/core': 0.13.11(solid-js@1.9.5)
       class-variance-authority: 0.7.1
       clsx: 2.1.1
+      event-target-polyfill: 0.0.4
       mitt: 3.0.1
+      partysocket: 1.1.5
       socket.io-client: 4.7.2
       solid-floating-ui: 0.3.1(@floating-ui/dom@1.6.13)(solid-js@1.9.5)
       solid-js: 1.9.5
@@ -5001,9 +5122,9 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@novu/react@3.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@novu/react@3.9.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@novu/js': 3.5.0
+      '@novu/js': 3.9.3
       react: 18.3.1
     optionalDependencies:
       react-dom: 18.3.1(react@18.3.1)
@@ -5169,6 +5290,28 @@ snapshots:
 
   '@socket.io/component-emitter@3.1.2': {}
 
+  '@solid-primitives/event-listener@2.4.3(solid-js@1.9.5)':
+    dependencies:
+      '@solid-primitives/utils': 6.3.2(solid-js@1.9.5)
+      solid-js: 1.9.5
+
+  '@solid-primitives/keyed@1.5.2(solid-js@1.9.5)':
+    dependencies:
+      solid-js: 1.9.5
+
+  '@solid-primitives/map@0.4.13(solid-js@1.9.5)':
+    dependencies:
+      '@solid-primitives/trigger': 1.2.2(solid-js@1.9.5)
+      solid-js: 1.9.5
+
+  '@solid-primitives/media@2.3.3(solid-js@1.9.5)':
+    dependencies:
+      '@solid-primitives/event-listener': 2.4.3(solid-js@1.9.5)
+      '@solid-primitives/rootless': 1.5.2(solid-js@1.9.5)
+      '@solid-primitives/static-store': 0.1.2(solid-js@1.9.5)
+      '@solid-primitives/utils': 6.3.2(solid-js@1.9.5)
+      solid-js: 1.9.5
+
   '@solid-primitives/props@3.2.0(solid-js@1.9.5)':
     dependencies:
       '@solid-primitives/utils': 6.3.0(solid-js@1.9.5)
@@ -5179,11 +5322,38 @@ snapshots:
       '@solid-primitives/utils': 6.3.0(solid-js@1.9.5)
       solid-js: 1.9.5
 
+  '@solid-primitives/resize-observer@2.1.3(solid-js@1.9.5)':
+    dependencies:
+      '@solid-primitives/event-listener': 2.4.3(solid-js@1.9.5)
+      '@solid-primitives/rootless': 1.5.2(solid-js@1.9.5)
+      '@solid-primitives/static-store': 0.1.2(solid-js@1.9.5)
+      '@solid-primitives/utils': 6.3.2(solid-js@1.9.5)
+      solid-js: 1.9.5
+
+  '@solid-primitives/rootless@1.5.2(solid-js@1.9.5)':
+    dependencies:
+      '@solid-primitives/utils': 6.3.2(solid-js@1.9.5)
+      solid-js: 1.9.5
+
+  '@solid-primitives/static-store@0.1.2(solid-js@1.9.5)':
+    dependencies:
+      '@solid-primitives/utils': 6.3.2(solid-js@1.9.5)
+      solid-js: 1.9.5
+
   '@solid-primitives/transition-group@1.1.0(solid-js@1.9.5)':
     dependencies:
       solid-js: 1.9.5
 
+  '@solid-primitives/trigger@1.2.2(solid-js@1.9.5)':
+    dependencies:
+      '@solid-primitives/utils': 6.3.2(solid-js@1.9.5)
+      solid-js: 1.9.5
+
   '@solid-primitives/utils@6.3.0(solid-js@1.9.5)':
+    dependencies:
+      solid-js: 1.9.5
+
+  '@solid-primitives/utils@6.3.2(solid-js@1.9.5)':
     dependencies:
       solid-js: 1.9.5
 
@@ -6182,7 +6352,7 @@ snapshots:
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.10.0(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.0(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.0)(eslint@8.57.1)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.57.1)
       eslint-plugin-react: 7.37.5(eslint@8.57.1)
       eslint-plugin-react-hooks: 5.0.0-canary-7118f5dd7-20230705(eslint@8.57.1)
@@ -6216,7 +6386,7 @@ snapshots:
       tinyglobby: 0.2.12
       unrs-resolver: 1.5.0
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.0(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.0)(eslint@8.57.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -6231,7 +6401,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.0(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.0)(eslint@8.57.1):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
@@ -6379,6 +6549,8 @@ snapshots:
   estraverse@5.3.0: {}
 
   esutils@2.0.3: {}
+
+  event-target-polyfill@0.0.4: {}
 
   events@3.3.0: {}
 
@@ -7174,6 +7346,10 @@ snapshots:
       leac: 0.6.0
       peberminta: 0.9.0
 
+  partysocket@1.1.5:
+    dependencies:
+      event-target-polyfill: 0.0.4
+
   path-exists@4.0.0: {}
 
   path-is-absolute@1.0.1: {}
@@ -7674,6 +7850,16 @@ snapshots:
       '@solid-primitives/refs': 1.1.0(solid-js@1.9.5)
       '@solid-primitives/transition-group': 1.1.0(solid-js@1.9.5)
       csstype: 3.1.3
+      solid-js: 1.9.5
+
+  solid-presence@0.1.8(solid-js@1.9.5):
+    dependencies:
+      '@corvu/utils': 0.4.2(solid-js@1.9.5)
+      solid-js: 1.9.5
+
+  solid-prevent-scroll@0.1.10(solid-js@1.9.5):
+    dependencies:
+      '@corvu/utils': 0.4.2(solid-js@1.9.5)
       solid-js: 1.9.5
 
   source-map-js@1.2.1: {}

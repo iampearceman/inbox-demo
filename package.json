@@ -17,7 +17,7 @@
     "@next/third-parties": "^14.2.9",
     "@novu/framework": "^2.1.0",
     "@novu/node": "^2.0.1",
-    "@novu/react": "^3.5.0",
+    "@novu/react": "^3.9.3",
     "@paralleldrive/cuid2": "^2.2.2",
     "@react-email/components": "0.0.22",
     "axios": "^1.7.4",

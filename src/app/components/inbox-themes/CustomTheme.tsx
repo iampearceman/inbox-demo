@@ -85,7 +85,7 @@ const CustomTheme = ({ subscriberId }: { subscriberId: string | null }) => {
           {/* Inbox Component */}
           {subscriberId && (
             <Inbox
-              open={appearanceVariables.open === true ? true : undefined}
+              open={appearanceVariables.open === true ? true : true}
               applicationIdentifier={novuConfig.applicationIdentifier}
               subscriberId={novuConfig.subscriberId}
               placement={"bottom-end"}

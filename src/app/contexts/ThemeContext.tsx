@@ -67,10 +67,7 @@ const themes: Theme[] = [
         colorSecondaryForeground: "#1A1523",
         colorCounter: "#E5484D",
         colorCounterForeground: "white",
-        colorBackground: "#f5f5f4",
-        colorForeground: "#1A1523",
         colorNeutral: "black",
-        fontSize: "inherit",
         borderRadius: "0.375rem",
       },
       elements: {

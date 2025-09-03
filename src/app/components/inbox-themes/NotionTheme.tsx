@@ -114,7 +114,6 @@ const NotionTheme = ({ subscriberId }: { subscriberId: string | null }) => {
           // bg="white"
           height="100%"
           overflowY="auto"
-          width="100%"
           maxW="390px"
           boxShadow={
             "rgba(15, 15, 15, 0.04) 0px 0px 0px 1px, rgba(15, 15, 15, 0.03) 0px 3px 6px, rgba(15, 15, 15, 0.06) 0px 9px 24px"
