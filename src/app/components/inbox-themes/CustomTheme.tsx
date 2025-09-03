@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { useTheme } from "../../contexts/ThemeContext";
 import { Box, Flex, Text, useColorModeValue, useBreakpointValue, Stack } from "@chakra-ui/react";
 import { Inbox } from "@novu/react";
@@ -12,6 +12,14 @@ const CustomTheme = ({ subscriberId }: { subscriberId: string | null }) => {
 
   const { inboxThemeForm, selectedTheme } = useTheme();
   const formValues = inboxThemeForm.watch();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      inboxThemeForm.setValue("open", true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [inboxThemeForm]);
 
   const appearanceVariables = {
     open: formValues.open,
@@ -28,17 +36,6 @@ const CustomTheme = ({ subscriberId }: { subscriberId: string | null }) => {
     fontSize: formValues.fontSize,
     borderRadius: formValues.borderRadius,
   };
-
-  const tabs = [
-    {
-      label: "All Notifications",
-      filter: { tags: [] },
-    },
-    {
-      label: "Security Alerts",
-      filter: { tags: ["Account & Security"] },
-    },
-  ];
 
   return (
     <Flex
@@ -85,12 +82,11 @@ const CustomTheme = ({ subscriberId }: { subscriberId: string | null }) => {
           {/* Inbox Component */}
           {subscriberId && (
             <Inbox
-              open={appearanceVariables.open === true ? true : true}
+              open={appearanceVariables.open}
               applicationIdentifier={novuConfig.applicationIdentifier}
               subscriberId={novuConfig.subscriberId}
               placement={"bottom-end"}
               placementOffset={40}
-              tabs={tabs}
               preferenceGroups={[
                 {
                   name: "Account & Security",
